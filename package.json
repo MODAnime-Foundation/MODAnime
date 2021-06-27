@@ -1,0 +1,67 @@
+{
+  "name": "modanime",
+  "version": "1.0.1",
+  "description": "A complete anime platform right at your fingertips!",
+  "main": "index.js",
+  "proxy": "http://localhost:40072",
+  "dependencies": {
+    "color": "^3.1.3",
+    "express": "^4.17.1",
+    "ffmpeg-static": "^4.3.0",
+    "html-to-text": "^7.1.1",
+    "needle": "^2.6.0",
+    "run-electron": "^1.0.0",
+    "scrape-youtube": "^2.1.5",
+    "ytdl-core": "^4.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "@tailwindcss/jit": "^0.1.10",
+    "cross-env": "^7.0.3",
+    "electron": "^12.0.5",
+    "eslint": "^7.28.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "postcss": "^8.2.15",
+    "postcss-clean": "^1.2.2",
+    "postcss-cli": "^8.3.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.3.1",
+    "prettier-plugin-svelte": "^2.3.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^1.0.11",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.2",
+    "svelte-spa-router": "^3.1.0",
+    "tailwindcss": "^2.1.2"
+  },
+  "scripts": {
+    "build:prod": "cross-env NODE_ENV=production rollup -c",
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "npx run-electron .",
+    "fix": "npx eslint --fix \"{,!(.modanime|.history|.idea|.vscode|node_modules|public)/**/}*.{js,svelte}\"",
+    "format": "npx prettier --write \"{,!(.modanime|.history|.idea|.vscode|node_modules|public)/**/}*.{js,svelte}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MODAnime-Foundation/MODAnime.git"
+  },
+  "keywords": [
+    "modanime",
+    "anime"
+  ],
+  "details": {
+    "author": "MODAnime Foundation",
+    "email": "modanimefoundation@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MODAnime-Foundation/MODAnime/issues"
+  },
+  "homepage": "https://github.com/MODAnime-Foundation/MODAnime#readme"
+}

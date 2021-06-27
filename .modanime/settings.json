@@ -1,0 +1,33 @@
+{
+    "theme": "dark",
+    "directories": {
+        "downloads": {
+            "videos": ".modanime/media/videos/",
+            "audios": ".modanime/media/audios/"
+        },
+        "prompts": {
+            "downloads": {
+                "videos": true,
+                "audios": true
+            }
+        }
+    },
+    "shortcuts": {
+        "titlebar": {
+            "close": "CommandOrControl+Shift+C",
+            "minimize": "CommandOrControl+Shift+M",
+            "resize": "CommandOrControl+Shift+R"
+        },
+        "routes": {
+            "home": "CommandOrControl+H",
+            "watch": "CommandOrControl+W",
+            "news": "CommandOrControl+N",
+            "downloads": "CommandOrControl+D",
+            "libstats": "CommandOrControl+L",
+            "settings": "CommandOrControl+S"
+        },
+        "action": {
+            "sync": "CommandOrControl+Alt+S"
+        }
+    }
+}
